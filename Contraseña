@@ -1,0 +1,11 @@
+import random
+
+
+cadena ="+-/*!$#?=@abcdefghijklmnoqrstuvxyzABCDEFGHIJKLMNOPQSTUVWXYZ"
+
+longitud = input("Ingrese la longitud de la contraseña: ")
+print("longitud: ", longitud)
+
+password = "".join(random.sample(cadena, int(longitud)))
+
+print("Contraseña", password)
